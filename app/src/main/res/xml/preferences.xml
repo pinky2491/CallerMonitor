@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Notifications &amp; Logging">
+        <SwitchPreferenceCompat
+            android:key="notify_unknown"
+            android:title="Notify for Unknown Callers"
+            android:summary="Show notifications for unknown callers"
+            android:defaultValue="true"/>
+        <SwitchPreferenceCompat
+            android:key="log_unknown_calls"
+            android:title="Log Unknown Calls"
+            android:summary="Store call logs for unknown numbers"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SMS">
+        <EditTextPreference
+            android:key="custom_sms"
+            android:title="Custom SMS Message"
+            android:summary="Edit the SMS message sent to unknown callers"
+            android:defaultValue="Your call is being monitored."/>
+    </PreferenceCategory>
+</PreferenceScreen> 

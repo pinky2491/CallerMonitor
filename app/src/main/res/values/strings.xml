@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">CallerMonitor</string>
+    
+    <!-- Main Activity -->
+    <string name="app_description">CallerMonitor is running. Incoming calls from unknown numbers will trigger a notification allowing you to alert the caller.</string>
+    <string name="btn_view_logs">View Unknown Call Logs</string>
+    <string name="btn_test_notification">Test Notification</string>
+    <string name="btn_test_call_receiver">Test CallReceiver</string>
+    
+    <!-- Notification -->
+    <string name="notification_channel_name">Unknown Caller Alerts</string>
+    <string name="notification_channel_description">Notifications for unknown incoming callers</string>
+    <string name="notification_title">Caller not in contacts</string>
+    <string name="notification_text">Tap to notify them this call is being monitored.</string>
+    <string name="notification_action">Notify Caller</string>
+    
+    <!-- SMS Messages -->
+    <string name="sms_monitoring_message">Your call is being monitored.</string>
+    <string name="toast_sms_sent">Notification sent to caller.</string>
+    <string name="toast_sms_permission_denied">SMS permission not granted.</string>
+    
+    <!-- Bottom Sheet -->
+    <string name="label_phone_number">Phone Number</string>
+    <string name="label_timestamp">Timestamp</string>
+    <string name="warning_spam_number">⚠️ This number is reported as spam!</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_send_sms">Send SMS</string>
+    <string name="btn_block">Block</string>
+    <string name="btn_report_spam">Report as Spam</string>
+    
+    <!-- Unknown Call Logs Activity -->
+    <string name="search_hint">Search by phone number</string>
+    <string name="toast_restore_complete">Restore complete</string>
+    <string name="toast_restore_failed">Restore failed: %1$s</string>
+    <string name="toast_log_deleted">Log deleted</string>
+    <string name="toast_no_logs_export">No logs to export</string>
+    <string name="csv_header">Phone Number,Timestamp\n</string>
+    <string name="toast_exported_to">Exported to %1$s</string>
+    <string name="share_csv">Share CSV</string>
+    <string name="toast_export_failed">Export failed: %1$s</string>
+    <string name="toast_no_logs_backup">No logs to backup</string>
+    <string name="toast_backup_saved_to">Backup saved to %1$s</string>
+    <string name="toast_backup_failed">Backup failed: %1$s</string>
+    <string name="toast_number_blocked_system">Number blocked at system level</string>
+    <string name="toast_block_failed">Block failed: %1$s</string>
+    <string name="toast_blocked_locally">Blocked locally. %1$s</string>
+    <string name="prompt_set_default_phone_app">Set app as default phone app for system-level blocking.</string>
+    <string name="toast_number_reported_spam">Number reported as spam</string>
+    <string name="toast_all_logs_deleted">All logs deleted</string>
+    
+    <!-- Intent Actions -->
+    <string name="intent_action_test_call">com.rvp.callermonitor.TEST_CALL</string>
+    <string name="intent_action_incoming_call">com.rvp.callermonitor.INCOMING_CALL</string>
+    <string name="intent_extra_phone_number">phone_number</string>
+    
+    <!-- Database -->
+    <string name="database_name">caller_monitor_db</string>
+    <string name="table_unknown_call_logs">unknown_call_logs</string>
+    <string name="table_blocked_numbers">blocked_numbers</string>
+    <string name="table_reported_spam_numbers">reported_spam_numbers</string>
+    
+    <!-- Service Names -->
+    <string name="service_notify_caller">NotifyCallerService</string>
+    <string name="service_notification_channel_name">Call Monitoring Service</string>
+    <string name="service_notification_channel_description">Service for monitoring incoming calls</string>
+    <string name="service_notification_title">CallerMonitor Active</string>
+    <string name="service_notification_text">Monitoring for unknown callers</string>
+    
+    <!-- Test Phone Numbers -->
+    <string name="test_phone_number_1">+919712744423</string>
+    <string name="test_phone_number_2">+919712744423</string>
+    
+    <!-- Log Messages -->
+    <string name="log_call_receiver_triggered">=== CALL RECEIVER TRIGGERED ===</string>
+    <string name="log_received_intent">Received intent: %1$s</string>
+    <string name="log_intent_extras">Intent extras: %1$s</string>
+    <string name="log_received_test_call">Received test call broadcast for: %1$s</string>
+    <string name="log_sent_broadcast_test">Sent broadcast for test call: %1$s</string>
+    <string name="log_phone_state">Phone state: %1$s</string>
+    <string name="log_incoming_number">Incoming number: %1$s</string>
+    <string name="log_sent_broadcast_incoming">Sent broadcast for incoming call: %1$s</string>
+    <string name="log_incoming_number_null">Incoming number is null or empty</string>
+    <string name="log_phone_state_not_ringing">Phone state is not RINGING, current state: %1$s</string>
+    <string name="log_intent_action_not_phone_state">Intent action is not PHONE_STATE_CHANGED: %1$s</string>
+    
+    <string name="log_test_notification_clicked">Test notification button clicked</string>
+    <string name="log_test_call_receiver_clicked">Test CallReceiver button clicked</string>
+    <string name="log_sent_test_broadcast">Sent test broadcast to CallReceiver</string>
+    <string name="log_received_broadcast">Received broadcast: %1$s</string>
+    <string name="log_processing_incoming_call">Processing incoming call: %1$s</string>
+    <string name="log_permission_result">Permission result for %1$s: %2$s</string>
+    <string name="log_permission_granted">Permission %1$s granted: %2$s</string>
+    <string name="log_notification_channel_created">Notification channel created successfully</string>
+    <string name="log_notification_channel_not_needed">Notification channel not needed for this Android version</string>
+    <string name="log_showing_notification">Showing notification for unknown caller: %1$s</string>
+    <string name="log_notification_permission_denied">Notification permission not granted</string>
+    <string name="log_notification_sent">Notification sent successfully</string>
+    <string name="log_notification_failed">Failed to send notification</string>
+    <string name="log_starting_monitoring_service">Starting call monitoring service</string>
+    <string name="log_call_monitoring_initialized">Call monitoring initialized</string>
+    
+    <string name="log_processing_incoming_call_vm">Processing incoming call: %1$s</string>
+    <string name="log_number_in_contacts">Number %1$s is in contacts: %2$s</string>
+    <string name="log_setting_unknown_caller">Setting unknown caller: %1$s</string>
+    <string name="log_logged_unknown_call">Logged unknown call for: %1$s</string>
+    <string name="toast_no_unknown_logs">No unknown call logs found. Try receiving a call from an unknown number or use the test button.</string>
+    <string name="toast_logs_loaded">Loaded %1$d unknown call logs</string>
+    <string name="import_call_logs">Import Call Logs</string>
+    <string name="test_database">Test Database</string>
+    <string name="toast_auto_imported">Auto-imported %1$d unknown call logs</string>
+    <string name="toast_call_log_permission_required">Call log permission required for auto-import</string>
+    <string name="toast_import_failed">Import failed: %1$s</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Search</string>
+    <string name="action_export">Export</string>
+    <string name="action_backup">Backup</string>
+    <string name="action_restore">Restore</string>
+    <string name="action_delete_all">Delete All</string>
+    <string name="search_dialog_title">Search Phone Numbers</string>
+    <string name="search_dialog_message">Enter a phone number or part of a number to search:</string>
+    <string name="search_dialog_hint">Enter phone number...</string>
+    <string name="search_dialog_search">Search</string>
+    <string name="search_dialog_cancel">Cancel</string>
+</resources>
